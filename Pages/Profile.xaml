@@ -1,0 +1,54 @@
+﻿<Page x:Class="SomeName.Pages.Profile"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SomeName.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Profile">
+
+    <Grid Background="Bisque">
+        <Grid VerticalAlignment="Top" Background="#FFFFDBB1" Grid.ColumnSpan="2">
+            <Label Content="Электронная приемная компания" HorizontalAlignment="Left" Margin="10,1,0,0" VerticalAlignment="Top" 
+                   FontWeight="Bold" FontSize="19"></Label>
+            <Label Content="Высшее учебное заведение имени кого-нибудь" HorizontalAlignment="Left" Margin="10,24,0,0" 
+                   VerticalAlignment="Top"></Label>
+            <Button x:Name="chat"
+                    BorderBrush="Bisque"
+                    Click="OpenChat"
+                    Content="Поддержка"
+                    Margin="0,0,130,10"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    Height="20"
+                    Width="110"
+                    Background="White"
+                    FontWeight="Bold"
+                    FontSize="12"/>
+            <Button x:Name="exit"
+                    BorderBrush="Bisque"
+                    Click="ExitProfile"
+                    Content="Выйти"
+                    Margin="0,0,10,10"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    Height="20"
+                    Width="110"
+                    Background="White"
+                    FontWeight="Bold"
+                    FontSize="12"/>
+        </Grid>
+        <Grid Margin="0,60,0,-0.4">
+            <Label Content="Личный кабинет" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold"></Label>
+            <Label Content="ФИО:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0" FontSize="20" FontWeight="Bold"/>
+            <Label Content="Мобильный телефон: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,80,0,0" FontSize="20" FontWeight="Bold"/>
+            <Label Content="Почта: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,110,0,0" FontSize="20" FontWeight="Bold"/>
+            <Label Content="Выбранные специальности: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,140,0,0" FontSize="20" FontWeight="Bold"/>
+            <ComboBox BorderBrush="Bisque" Background="White" Margin="300,150,10,0" VerticalAlignment="Top"/>
+            <Label Content="Статус заявки:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,170,0,0" FontSize="20" FontWeight="Bold"/>
+            <Button Margin="10,0,0,10" Content="Сменить пароль" Height="30" Width="180" FontSize="20" FontWeight="Bold" Background="White" BorderBrush="Bisque" VerticalAlignment="Bottom" HorizontalAlignment="Left"></Button>
+        </Grid>
+        
+    </Grid>
+</Page>

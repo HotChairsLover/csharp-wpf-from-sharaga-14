@@ -1,0 +1,77 @@
+﻿<Page x:Class="SomeName.Pages.DBAdd"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SomeName.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="800"
+      Title="DBAdd">
+
+    <Grid Background="Bisque">
+        <Grid VerticalAlignment="Top" Background="#FFFFDBB1" Grid.ColumnSpan="2">
+            <Label Content="Электронная приемная компания" HorizontalAlignment="Left" Margin="10,1,0,0" VerticalAlignment="Top" 
+                   FontWeight="Bold" FontSize="19"></Label>
+            <Label Content="Высшее учебное заведение имени кого-нибудь" HorizontalAlignment="Left" Margin="10,24,0,0" 
+                   VerticalAlignment="Top"></Label>
+        </Grid>
+        <Grid Margin="0,60,0,-0.4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="continue"
+                    BorderBrush="Bisque"
+                    Click="Done"
+                    Content="Добавить"
+                    Margin="0,0,10,10"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    Height="40"
+                    Width="150"
+                    Background="White"
+                    FontWeight="Bold"
+                    FontSize="20"
+                    Grid.Column="1"></Button>
+            <Button x:Name="cancel"
+                    BorderBrush="Bisque"
+                    Click="Cancel"
+                    Content="Отмена"
+                    Margin="0,0,180,10"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    Height="40"
+                    Width="150"
+                    Background="White"
+                    FontWeight="Bold"
+                    FontSize="20"
+                    Grid.Column="1"></Button>
+            <Label Content="ФИО" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top"/>
+            <TextBox Height="23" Margin="10,20,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+            <Label Content="Специальности" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top"/>
+            <ComboBox Height="25" BorderBrush="Bisque" Background="White" Margin="10,60,10,0" VerticalAlignment="Top"/>
+            <Button Grid.Column="1" Background="White" Height="23" Content="Удалить" HorizontalAlignment="Right" Margin="0,60,10,0" VerticalAlignment="Top" Width="75"/>
+            <Label Grid.Column="1" Content="Выбрано:" HorizontalAlignment="Left" Margin="10,40,0,0"  VerticalAlignment="Top"/>
+            <ComboBox Grid.Column="1" Height="25" BorderBrush="Bisque" Background="White" Margin="10,60,97,0" VerticalAlignment="Top"/>
+            <Label Content="Форма обучения" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top"/>
+            <ComboBox BorderBrush="Bisque" Background="White" Margin="10,110,10,0" VerticalAlignment="Top"/>
+            <Label Content="Способ оплаты" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+            <ComboBox BorderBrush="Bisque" Background="White" Margin="10,110,10,0" VerticalAlignment="Top" Grid.Column="1"/>
+            <Label Content="Окончил учебное заведение" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top"/>
+            <TextBox TextWrapping="Wrap" Text="" Height="23" BorderBrush="Bisque" Background="White" Margin="10,150,10,0" VerticalAlignment="Top"/>
+            <Label Content="Год окончания учебного заведения" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+            <ComboBox BorderBrush="Bisque" Background="White" Margin="10,150,10,0" VerticalAlignment="Top" Grid.Column="1"/>
+            <Label Content="Мобильный телефон" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top"/>
+            <TextBox Height="23" Margin="10,190,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+            <Label Content="Домашний телефон" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+            <TextBox Height="23" Margin="10,190,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="1"/>
+            <Label Content="Email" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top"/>
+            <TextBox Height="23" Margin="10,230,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+            <Button BorderBrush="Bisque" Background="White" Height="23" Content="Скан паспорта" Margin="10,270,10,0" VerticalAlignment="Top"></Button>
+            <Button BorderBrush="Bisque" Background="White" Height="23" Content="Скан снилс" Margin="10,270,10,0" VerticalAlignment="Top" Grid.Column="1"></Button>
+            <Button BorderBrush="Bisque" Background="White" Height="23" Content="Скан приписного" Margin="10,310,10,0" VerticalAlignment="Top" Grid.Column="1"></Button>
+            <Button BorderBrush="Bisque" Background="White" Height="23" Content="Скан аттестата" Margin="10,310,10,0" VerticalAlignment="Top"></Button>
+            <Button Grid.ColumnSpan="2" BorderBrush="Bisque" Background="White" Height="23" Content="Просмотр сканов" Margin="10,350,10,0" VerticalAlignment="Top"></Button>
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,103 @@
+﻿<Page x:Class="SomeName.Pages.DataBaseView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SomeName.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DataBaseView">
+
+    <Grid Background="Bisque">
+        <Grid VerticalAlignment="Top"
+              Background="#FFFFDBB1">
+            <Label Content="Электронная приемная компания"
+                   HorizontalAlignment="Left"
+                   Margin="10,1,0,0"
+                   VerticalAlignment="Top"
+                   FontWeight="Bold"
+                   FontSize="19"></Label>
+            <Label Content="Высшее учебное заведение имени кого-нибудь"
+                   HorizontalAlignment="Left"
+                   Margin="10,24,0,0"
+                   VerticalAlignment="Top"></Label>
+            <Button x:Name="chat"
+                    BorderBrush="Bisque"
+                    Click="OpenChat"
+                    Content="Поддержка"
+                    Margin="0,0,130,10"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    Height="20"
+                    Width="110"
+                    Background="White"
+                    FontWeight="Bold"
+                    FontSize="12"/>
+            <Button x:Name="exit"
+                    BorderBrush="Bisque"
+                    Click="ExitProfile"
+                    Content="Выйти"
+                    Margin="0,0,10,10"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    Height="20"
+                    Width="110"
+                    Background="White"
+                    FontWeight="Bold"
+                    FontSize="12"/>
+        </Grid>
+        <Grid Margin="0,60,0,0">
+            
+            <Button x:Name="continue"
+                    BorderBrush="Bisque"
+                    Click="NextPage"
+                    Content="Статистика"
+                    Margin="0,0,10,10"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    Height="40"
+                    Width="150"
+                    Background="White"
+                    FontWeight="Bold"
+                    FontSize="20"/>
+            <Button x:Name="delete"
+                    BorderBrush="Bisque"
+                    Click="DeleteDB"
+                    Content="Удалить"
+                    Margin="0,0,180,10"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    Height="40"
+                    Width="150"
+                    Background="White"
+                    FontWeight="Bold"
+                    FontSize="20"/>
+            <Button x:Name="change"
+                    BorderBrush="Bisque"
+                    Click="ChangeDB"
+                    Content="Изменить"
+                    Margin="0,0,350,10"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    Height="40"
+                    Width="150"
+                    Background="White"
+                    FontWeight="Bold"
+                    FontSize="20"/>
+            <Button x:Name="add"
+                    BorderBrush="Bisque"
+                    Click="AddDB"
+                    Content="Добавить"
+                    Margin="0,0,520,10"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    Height="40"
+                    Width="150"
+                    Background="White"
+                    FontWeight="Bold"
+                    FontSize="20"/>
+            
+            <DataGrid x:Name="gridView" Margin="0,0,0,60"/>
+        </Grid>
+    </Grid>
+</Page>
